@@ -1,0 +1,27 @@
+// This file will provide a secure from unexpected and hided 
+// conflicts between ESlint prettier-plugin and VSCode extension plugin 
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": false, // Need to turn off because ESLint would formatting with Prettier plugin
+
+  "[javascript]": {
+    "editor.defaultFormatter": null
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": null
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": null
+  }
+}
