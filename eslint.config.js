@@ -12,7 +12,7 @@ import tseslint from 'typescript-eslint'
 
 export default [
   {
-    // those files we are don't need to lint beacause they are 
+    // We don’t need to lint those files because they are
     // system files, reports, bundles or external code
     ignores: [
       '**/node_modules/**',
