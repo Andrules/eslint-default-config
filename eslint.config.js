@@ -11,6 +11,18 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import tseslint from 'typescript-eslint'
 
 export default [
+  {
+    // those files we are don't need to lint beacause they are 
+    // system files, reports, bundles or external code
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/build/**',
+      '**/coverage/**',
+      '**/*.min.*',
+      '**/*.d.ts'
+    ]
+  },
   js.configs.recommended,
   ...tseslint.configs.recommended, //remove this line if you do not use TypeScript
 
